@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="items.Locality" table="LocalityH">
+        <meta attribute="class-description">
+            This class contains developer's details.
+        </meta>
+        <id name="id" type="int" column="id"/>
+        <property name="name" column="name" type="string"/>
+        <property name="populationAmount" column="populationAmount" type="int"/>
+        <property name="isCapital" column="isCapital" type="string"/>
+        <property name="isRegionCentre" column="isRegionCentre" type="string"/>
+        <property name="localityTypeId" column="localityTypeId" type="int"/>
+        <property name="emblemId" column="emblemId" type="int"/>
+        <property name="regionId" column="regionId" type="int"/>
+    </class>
+</hibernate-mapping>

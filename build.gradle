@@ -1,0 +1,19 @@
+group 'hibernate'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.hibernate', name: 'hibernate-gradle-plugin', version: '5.2.12.Final'
+    compile group: 'org.liquibase', name: 'liquibase-gradle-plugin', version: '1.2.4'
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
+
+
+}

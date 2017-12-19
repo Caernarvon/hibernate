@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="items.Country_nationalities" table="Country_nationalitiesH">
+        <meta attribute="class-description">
+            This class contains developer's details.
+        </meta>
+        <id name="countryId" type="int" column="id"/>
+        <property name="nationId" type="int" column="id"/>
+    </class>
+</hibernate-mapping>
